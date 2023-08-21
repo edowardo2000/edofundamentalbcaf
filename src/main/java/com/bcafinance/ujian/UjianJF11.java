@@ -23,7 +23,11 @@ public class UjianJF11 {
             int f2random = random.nextInt(0, 5);
             int f3 = random.nextInt(100, 1000);
 
+<<<<<<< HEAD
             phoneNo += f1[f1random].toString() + '8' + f2[f2random].toString() + strip + f3 + strip;
+=======
+            phoneNo += f1[f1random].toString() + f2[f2random].toString() + strip + f3 + strip;
+>>>>>>> github/master
             int length = phoneNo.length() - 2;
 
 //            System.out.println(length);
