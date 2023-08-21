@@ -62,7 +62,6 @@ public class Main {
 //        System.out.println(strThirds.substring(5,7));
 
 
-
 //        System.out.print("Masukkan string : ");
 //        Scanner scanner = new Scanner(System.in);
 //        String str123 = scanner.nextLine();
@@ -73,6 +72,19 @@ public class Main {
 //        int angka = scanner.nextInt();
 //
 //        System.out.println("anda memasukkan angka " + angka);
+
+        int[][] intArr = new int[3][4];
+        int[] intArr2 = {1,2,3,4,5,6,7,8,9,10,11,12};
+        for (int i = 0; i < intArr.length; i++) {
+            for (int j = 0; j < intArr[i].length; j++) {
+                    intArr[i][j] = intArr2[i];
+                    System.out.print(intArr[i][j]);
+                    System.out.print("\t");
+                }
+                System.out.println();
+            }
+
+
 
 
 
@@ -106,33 +118,87 @@ public class Main {
 //        System.out.println(output);
 
 
-        for(int i=0; i<5; i++){
-            System.out.println("Number: " + (i+1));
+//        for(int i=0; i<5; i++){
+//            System.out.println("Number: " + (i+1));
+//        }
+//
+//
+//        String again = "N";
+//
+//        do{
+//            String input="";
+//            int ascii = 0;
+//            int total = 0;
+//            System.out.println("Masukkan Kalimat: ");
+//            Scanner scanner = new Scanner (System.in);
+//            input = scanner.nextLine();
+//
+//            char [] charArray = input.toCharArray();
+//            for (int i=0; i< charArray.length; i++){
+//                ascii = charArray[i];
+//                if((ascii>=65&&ascii<=90)||(ascii>=97&ascii<=122)){
+//                    total+= ascii;
+//                }
+//            }
+//            System.out.println(total);
+//
+//            System.out.println("Enter again? (Y/N)");
+//            again = scanner.next();
+//        }while (again.equals("Y"));
+
+//        StringBuilder sBuild = new StringBuilder();
+//        int[] val = {69,89,31,56,99};
+//        String bef = "";
+//        String aft = "";
+//        int initz = 0;
+//        int intContainer = 0;
+//        sBuild.setLength(0);
+//        System.out.println("\n==BEFORE==");
+//        for (int num:val)
+//        {
+//            bef = sBuild.append(num).append(",").toString();
+//        }
+//        System.out.print(bef.substring(0,bef.length()-1));
+//        for(int i = 0 ; i < val.length ; i++)
+//        {
+//            initz = i;
+//            if(i!=val.length-1)
+//            {
+//                for (int j = i ; j < val.length ; j++)
+//                {
+//                    if(val[initz] > val[j])
+//                    {
+//                        initz = j;
+//                    }
+//                }
+//            }
+//            intContainer = val[i];
+//            val[i] = val[initz];
+//            val[initz] = intContainer;
+//        }
+//        sBuild.setLength(0);
+//        System.out.println("\n==AFTER==");
+//        for (int num:val)
+//        {
+//            aft = sBuild.append(num).append(",").toString();
+//        }
+//        System.out.print(aft.substring(0,aft.length()-1));
+
+        //System.out.println(0%2);
+
+        for (int i = 0; i < 5; i++) {
+
+            System.out.print("Heu");
+
+            if (i == 3) {
+
+                break;
+
+
+            }
+
         }
 
-
-        String again = "N";
-
-        do{
-            String input="";
-            int ascii = 0;
-            int total = 0;
-            System.out.println("Masukkan Kalimat: ");
-            Scanner scanner = new Scanner (System.in);
-            input = scanner.nextLine();
-
-            char [] charArray = input.toCharArray();
-            for (int i=0; i< charArray.length; i++){
-                ascii = charArray[i];
-                if((ascii>=65&&ascii<=90)||(ascii>=97&ascii<=122)){
-                    total+= ascii;
-                }
-            }
-            System.out.println(total);
-
-            System.out.println("Enter again? (Y/N)");
-            again = scanner.next();
-        }while (again.equals("Y"));
-
+        }
     }
-}
+
